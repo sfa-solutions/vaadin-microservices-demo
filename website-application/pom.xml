@@ -65,6 +65,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.vaadin/flow-server -->
+	<dependency>
+	    <groupId>com.vaadin</groupId>
+	    <artifactId>flow-server</artifactId>
+	</dependency>
+
     </dependencies>
 
     <dependencyManagement>

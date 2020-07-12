@@ -24,6 +24,7 @@ public class WebsiteView extends SplitLayout {
         addToPrimary(new IFrame(adminUrl));
         addToSecondary(new IFrame(newsUrl));
         setSplitterPosition(uiSplitPosition);
+        setOrientation(Orientation.VERTICAL);
         setSizeFull();
     }
 

@@ -51,7 +51,12 @@ public class WebsiteApplication {
 
     private SpringServlet buildSpringServlet(ApplicationContext applicationContext) {
         return new SpringServlet(applicationContext) {
-            @Override
+            /**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
             protected VaadinServletService createServletService(DeploymentConfiguration deploymentConfiguration) throws
                     ServiceException {
                 SpringVaadinServletService service =
@@ -66,7 +71,12 @@ public class WebsiteApplication {
                                                                        DeploymentConfiguration deploymentConfiguration,
                                                                        ApplicationContext applicationContext) {
         return new SpringVaadinServletService(servlet, deploymentConfiguration, applicationContext) {
-            @Override
+            /**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			@Override
             public void requestEnd(VaadinRequest request, VaadinResponse response, VaadinSession session) {
                 if (session != null) {
                     try {
